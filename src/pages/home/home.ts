@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { AlertController,ModalController } from 'ionic-angular';
 import { CompraPage } from '../compra/compra';
+import { TabsPage } from '../tabs/tabs';
 
 @Component({
   selector: 'page-home',
@@ -16,8 +17,8 @@ export class HomePage {
   }
 
   entrar(){
-    if(this.usuario.email == 'mumumilk@mumumilk.com.br' && this.usuario.senha =='123456'){
-      this.navCtrl.push(CompraPage);
+    if(this.usuario.email == '1' && this.usuario.senha =='1'){
+      this.navCtrl.push(TabsPage);
     }else{
       this.alertaLoginFalha();
     }

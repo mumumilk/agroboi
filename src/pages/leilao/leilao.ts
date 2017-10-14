@@ -14,7 +14,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'leilao.html',
 })
 export class LeilaoPage {
-ipo : string = 'acontecendo';
+tipo : string = 'acontecendo';
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
@@ -22,6 +22,6 @@ ipo : string = 'acontecendo';
     console.log('ionViewDidLoad LeilaoPage');
   }
 
-  
+
 
 }

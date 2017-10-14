@@ -2,6 +2,7 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 import { TabsPage } from '../pages/tabs/tabs';
 
@@ -23,7 +24,8 @@ import { TrocaPage } from '../pages/troca/troca';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    FlexLayoutModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

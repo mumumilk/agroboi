@@ -38,56 +38,110 @@
                 Corte
             </ion-segment-button>
             <ion-segment-button value="leite">
-                Leiteiro
+                Leite
+            </ion-segment-button>
+            <ion-segment-button value="raca">
+                Raça
             </ion-segment-button>
         </ion-segment>
     </div>
 
 
-    <ion-card (click)="abrirDetalhe()">
-        <img src="assets/img/boi.jpg" />
+    <ion-card (click)="abrirDetalhe('corte')">
+        <img src="assets/img/rebanho.jpg" />
         <ion-card-content>
             <ion-card-title>
                 <div fxLayout="row" fxLayoutAlign="space-between center">
-                    <div>Mimosa</div>
-                    <div>
-                        <ion-icon name="cash"></ion-icon>
-                        15.758
-                    </div>
+                    <div>Lote 43</div>
+                    <div>R$ 150.758,00</div>
                 </div>
             </ion-card-title>
             <ion-item>
                 <ion-icon name="ribbon" item-start small></ion-icon>
-                <p>Nelore</p>
+                <p>Raça: Nelore</p>
             </ion-item>
 
             <ion-item>
                 <ion-icon name="at" item-left small></ion-icon>
-                <p>15</p>
+                <p>Quantidade:43</p>
+            </ion-item>
+
+            <ion-item>
+                <ion-icon name="at" item-left small></ion-icon>
+                <p>Idade: 15</p>
+            </ion-item>
+
+            <ion-item>
+                <ion-icon name="at" item-left small></ion-icon>
+                <p>Sexo: Macho</p>
+            </ion-item>
+
+
+            <ion-item>
+                <ion-icon name="at" item-left small></ion-icon>
+                <p>Peso: 10@</p>
             </ion-item>
         </ion-card-content>
     </ion-card>
-    <ion-card (click)="abrirDetalhe()">
-        <img src="assets/img/boi2.jpg" />
+    <ion-card (click)="abrirDetalhe('leite')">
+        <img src="assets/img/leiteira.jpg" />
         <ion-card-content>
             <ion-card-title>
                 <div fxLayout="row" fxLayoutAlign="space-between center">
                     <div>Mimosa</div>
                     <div>
-                        <ion-icon name="cash"></ion-icon>
-                        15.758
+                        R$ 15.758,00
                     </div>
                 </div>
             </ion-card-title>
             <ion-item>
                 <ion-icon name="ribbon" item-start small></ion-icon>
-                <p>Nelore</p>
+                <p>Raça: Holandesa</p>
             </ion-item>
 
             <ion-item>
                 <ion-icon name="at" item-left small></ion-icon>
-                <p>15</p>
+                <p>Idade: 10</p>
             </ion-item>
+
+            <ion-item>
+                <ion-icon name="at" item-left small></ion-icon>
+                <p>Peso: 10@</p>
+            </ion-item>
+
+
+            <ion-item>
+                <ion-icon name="at" item-left small></ion-icon>
+                <p>Lactação: 5 kg/dia</p>
+            </ion-item>
+        </ion-card-content>
+    </ion-card>
+    <ion-card (click)="abrirDetalhe('raca')">
+        <img src="assets/img/raca.jpg" />
+        <ion-card-content>
+            <ion-card-title>
+                <div fxLayout="row" fxLayoutAlign="space-between center">
+                    <div>Bruto</div>
+                    <div>
+                        R$ 15.758,00
+                    </div>
+                </div>
+            </ion-card-title>
+            <ion-item>
+                <ion-icon name="ribbon" item-start small></ion-icon>
+                <p>Raça: Angus</p>
+            </ion-item>
+
+            <ion-item>
+                <ion-icon name="at" item-left small></ion-icon>
+                <p>Idade: 10</p>
+            </ion-item>
+
+            <ion-item>
+                <ion-icon name="at" item-left small></ion-icon>
+                <p>Peso: 10@</p>
+            </ion-item>
+
         </ion-card-content>
     </ion-card>
 </ion-content>

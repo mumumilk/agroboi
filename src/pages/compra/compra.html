@@ -5,11 +5,22 @@
   Ionic pages and navigation.
 -->
 <ion-header>
+    <ion-navbar color="primary">
+        <div fxLayout="row" fxLayoutAlign="space-between center">
+            <ion-item fxFlex="70">
+                <ion-label>
+                    <ion-icon style="color: white" name="search"></ion-icon>
+                </ion-label>
+                <ion-input clearInput type="text"></ion-input>
+            </ion-item>
+            <div fxFlex="20">
+                <button ion-button icon-only style="display: inline-block">
+            <ion-icon name="options"></ion-icon>
+        </button>
+            </div>
+        </div>
 
-    <ion-navbar>
-        <ion-title>compra</ion-title>
     </ion-navbar>
-
 </ion-header>
 
 
@@ -18,11 +29,23 @@
         <img src="assets/img/boi.jpg" />
         <ion-card-content>
             <ion-card-title>
-                Alguma informacao do boi
+                <div fxLayout="row" fxLayoutAlign="space-between center">
+                    <div>Mimosa</div>
+                    <div>
+                        <ion-icon name="cash"></ion-icon>
+                        15.758
+                    </div>
+                </div>
             </ion-card-title>
-            <p>
-                The most popular industrial group ever, and largely responsible for bringing the music to a mass audience.
-            </p>
+            <ion-item>
+                <ion-icon name="ribbon" item-start small></ion-icon>
+                <p>Nelore</p>
+            </ion-item>
+
+            <ion-item>
+                <ion-icon name="at" item-left small></ion-icon>
+                <p>15</p>
+            </ion-item>
         </ion-card-content>
     </ion-card>
 </ion-content>

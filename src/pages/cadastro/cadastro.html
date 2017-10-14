@@ -8,44 +8,49 @@
 
   <ion-navbar>
     <ion-title>Cadastro</ion-title>
+    <ion-buttons right>
+      <button ion-button icon-only (click)="fechar()">
+        <ion-icon name="md-close"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
 
-<ion-item>
-  <ion-label floating>Nome:</ion-label>
-  <ion-input type="text" [(ngModel)]="nome"></ion-input>
-  {{nome}}
-</ion-item>
 
-<ion-item>
-  <ion-label floating>Documento:</ion-label>
-  <ion-input type="text" [(ngModel)]="documento"></ion-input>
-  {{documento}}
-</ion-item>
-
-<ion-item>
-  <ion-label floating>E-mail:</ion-label>
-  <ion-input type="text" [(ngModel)]="email"></ion-input>
-  {{email}}
-</ion-item>
-
-<ion-item>
-  <ion-label floating>Usuário:</ion-label>
-  <ion-input type="text" [(ngModel)]="usuario"></ion-input>
-  {{usuario}}
-</ion-item>
-
-<ion-item>
-  <ion-label floating>Senha:</ion-label>
-  <ion-input type="password" [(ngModel)]="senha"></ion-input>
-  {{senha}}
-</ion-item>
-
-
-<button color="primary" ion-button block (click)="salvar()">
-Cadastrar
-</button>
 <ion-content padding>
+  <ion-item>
+    <ion-label floating>Nome:</ion-label>
+    <ion-input type="text" [(ngModel)]="nome"></ion-input>
+    {{nome}}
+  </ion-item>
 
+  <ion-item>
+    <ion-label floating>Documento:</ion-label>
+    <ion-input type="text" [(ngModel)]="documento"></ion-input>
+    {{documento}}
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>E-mail:</ion-label>
+    <ion-input type="text" [(ngModel)]="email"></ion-input>
+    {{email}}
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Usuário:</ion-label>
+    <ion-input type="text" [(ngModel)]="usuario"></ion-input>
+    {{usuario}}
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Senha:</ion-label>
+    <ion-input type="password" [(ngModel)]="senha"></ion-input>
+    {{senha}}
+  </ion-item>
+
+
+  <button color="primary" ion-button block (click)="salvar()">
+  Cadastrar
+  </button>
 </ion-content>

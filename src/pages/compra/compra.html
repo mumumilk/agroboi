@@ -6,11 +6,11 @@
 -->
 <ion-header>
     <ion-navbar color="primary">
-        <div fxLayout="row" fxLayoutAlign="space-around center">
-            <div fxFlex="20">
+        <div fxLayout="row" fxLayoutAlign="space-between center">
+            <div fxFlex="15">
                 <button ion-button icon-only menuToggle>
-            <ion-icon name="menu"></ion-icon>
-        </button>
+                <ion-icon name="menu"></ion-icon>
+            </button>
             </div>
             <ion-item fxFlex="70">
                 <ion-label>
@@ -18,10 +18,10 @@
                 </ion-label>
                 <ion-input clearInput type="text"></ion-input>
             </ion-item>
-            <div fxFlex="20">
-                <button ion-button (click)="opcoesModal()" icon-only>
-            <ion-icon name="options" ></ion-icon>
-        </button>
+            <div fxFlex="15">
+                <button (click)="opcoesModal()" ion-button icon-only menuToggle>
+                    <ion-icon name="options"></ion-icon>
+                </button>
             </div>
         </div>
 
@@ -40,9 +40,6 @@
             </ion-segment-button>
             <ion-segment-button value="leite">
                 Leite
-            </ion-segment-button>
-            <ion-segment-button value="raca">
-                Raça
             </ion-segment-button>
         </ion-segment>
     </div>
@@ -77,6 +74,46 @@
                             <p>10 arrobas</p>
                             <ion-icon name="at" item-left small></ion-icon>
                         </ion-item>
+                    </div>
+
+                </ion-card-content>
+            </ion-card>
+            <ion-card (click)="abrirDetalhe('raca')">
+                <img src="assets/img/raca.jpg" />
+                <ion-card-content>
+                    <ion-card-title>
+                        <div fxLayout="row" fxLayoutAlign="space-between center">
+                            <div>Bruto</div>
+                            <div>
+                                R$ 15.758,00
+                            </div>
+                        </div>
+                    </ion-card-title>
+                    <div fxLayout="row">
+
+                        <ion-item fxFlex="50">
+                            <ion-icon name="ribbon" item-left small></ion-icon>
+                            <p>Angus</p>
+                        </ion-item>
+
+
+                        <ion-item fxFlex="50">
+                            <ion-icon name="stats" item-left small></ion-icon>
+                            <p>30 meses</p>
+                        </ion-item>
+                    </div>
+                    <div fxLayout="row">
+
+                        <ion-item fxFlex="50">
+                            <ion-icon name="at" item-left small></ion-icon>
+                            <p>20 arrobas</p>
+                        </ion-item>
+
+                        <ion-item fxFlex="50">
+                            <ion-icon name="pricetag" item-left small></ion-icon>
+                            <p>Reprodutor</p>
+                        </ion-item>
+
                     </div>
 
                 </ion-card-content>
@@ -136,44 +173,5 @@
             </ion-card>
         </div>
 
-        <div *ngSwitchCase="'raca'">
-            <ion-card (click)="abrirDetalhe('raca')">
-                <img src="assets/img/raca.jpg" />
-                <ion-card-content>
-                    <ion-card-title>
-                        <div fxLayout="row" fxLayoutAlign="space-between center">
-                            <div>Bruto</div>
-                            <div>
-                                R$ 15.758,00
-                            </div>
-                        </div>
-                    </ion-card-title>
-                    <div fxLayout="row">
-
-                        <ion-item fxFlex="50">
-                            <ion-icon name="ribbon" item-left small></ion-icon>
-                            <p>Angus</p>
-                        </ion-item>
-
-
-                        <ion-item fxFlex="50">
-                            <ion-icon name="stats" item-left small></ion-icon>
-                            <p>30 meses</p>
-                        </ion-item>
-                    </div>
-                    <div fxLayout="row">
-
-                        <ion-item fxFlex="50">
-                            <ion-icon name="at" item-left small></ion-icon>
-                            <p>20 arrobas</p>
-                        </ion-item>
-
-                    </div>
-
-
-                </ion-card-content>
-            </ion-card>
-
-        </div>
     </div>
 </ion-content>

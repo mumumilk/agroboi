@@ -1,6 +1,7 @@
-import { NgModule } from '@angular/core';
-import { IonicPageModule } from 'ionic-angular';
+import { NgModule, ViewChild } from '@angular/core';
+import { IonicPageModule, NavController } from 'ionic-angular';
 import { DetalheCortePage } from './detalhe-corte';
+
 
 @NgModule({
   declarations: [

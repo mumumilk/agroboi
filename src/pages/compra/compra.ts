@@ -5,6 +5,7 @@ import { ModalController, ViewController } from 'ionic-angular';
 import { DetalheCortePage } from '../detalhe-corte/detalhe-corte';
 import { DetalheLeitePage } from '../detalhe-leite/detalhe-leite';
 import { DetalheRacaPage } from '../detalhe-raca/detalhe-raca';
+import { OpcaoPage } from '../opcao/opcao';
 
 
 /**
@@ -36,8 +37,8 @@ export class CompraPage {
     }
   }
 
-  opcoesModal() {
-  //let contactModal = this.modalCtrl.create(OpcaoPage);
-  //contactModal.present();
+  opcaoModal() {
+  let opcaoModal = this.modalCtrl.create(OpcaoPage);
+  opcaoModal.present();
   }
 }

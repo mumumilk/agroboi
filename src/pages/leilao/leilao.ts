@@ -16,6 +16,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class LeilaoPage {
 tipo : string = 'acontecendo';
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.tipo =  'acontecendo'
   }
 
   ionViewDidLoad() {

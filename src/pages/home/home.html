@@ -8,7 +8,7 @@
 
 <ion-content padding >
 <ion-card>
-  <img src = "assets/img/logo.jpeg" class="ion-card"/>
+  <img src = "assets/img/logo2.jpg" class="ion-card"/>
   <ion-card-content>
   	<ion-item>
   		<ion-label floating>Email:</ion-label>
@@ -19,9 +19,9 @@
   		<ion-label floating>Senha:</ion-label>
   		<ion-input type="password" [(ngModel)]="usuario.senha"></ion-input>
   	</ion-item>
-    <button ion-button (click)="entrar()">Entrar</button>
+    <button ion-button (click)="entrar()" class="ion-button">Entrar</button>
 
-    <button ion-button outline (click)="abrirCadastro()">Registrar</button>
+    <button ion-button outline (click)="abrirCadastro()" class="ion-button">Registrar</button>
   </ion-card-content>
 </ion-card>
 

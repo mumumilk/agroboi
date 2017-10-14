@@ -22,6 +22,8 @@ import { OpcaoPage } from '../opcao/opcao';
 })
 export class CompraPage {
 
+  tipo : string = 'corte';
+
   constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController) {
   }
 

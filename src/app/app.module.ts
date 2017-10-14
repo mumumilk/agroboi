@@ -14,6 +14,9 @@ import { LeilaoPage } from '../pages/leilao/leilao';
 import { TrocaPage } from '../pages/troca/troca';
 import { HomePage } from '../pages/home/home';
 import { DetalhePage } from '../pages/detalhe/detalhe';
+import { DetalheRacaPage } from '../pages/detalhe-raca/detalhe-raca';
+import { DetalheLeitePage } from '../pages/detalhe-leite/detalhe-leite';
+import { DetalheCortePage } from '../pages/detalhe-corte/detalhe-corte';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { DetalhePage } from '../pages/detalhe/detalhe';
     VendaPage,
     LeilaoPage,
     TrocaPage,
-    DetalhePage
+    DetalhePage,
+    DetalheRacaPage,
+    DetalheLeitePage,
+    DetalheCortePage
   ],
   imports: [
     BrowserModule,
@@ -40,7 +46,10 @@ import { DetalhePage } from '../pages/detalhe/detalhe';
     LeilaoPage,
     TrocaPage,
     TabsPage,
-    DetalhePage
+    DetalhePage,
+    DetalheRacaPage,
+    DetalheLeitePage,
+    DetalheCortePage
   ],
   providers: [
     StatusBar,

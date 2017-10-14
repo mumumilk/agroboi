@@ -30,8 +30,45 @@
 
 
 <ion-content padding>
+
+
+    <div padding>
+        <ion-segment>
+            <ion-segment-button value="corte">
+                Corte
+            </ion-segment-button>
+            <ion-segment-button value="leite">
+                Leiteiro
+            </ion-segment-button>
+        </ion-segment>
+    </div>
+
+
     <ion-card (click)="abrirDetalhe()">
         <img src="assets/img/boi.jpg" />
+        <ion-card-content>
+            <ion-card-title>
+                <div fxLayout="row" fxLayoutAlign="space-between center">
+                    <div>Mimosa</div>
+                    <div>
+                        <ion-icon name="cash"></ion-icon>
+                        15.758
+                    </div>
+                </div>
+            </ion-card-title>
+            <ion-item>
+                <ion-icon name="ribbon" item-start small></ion-icon>
+                <p>Nelore</p>
+            </ion-item>
+
+            <ion-item>
+                <ion-icon name="at" item-left small></ion-icon>
+                <p>15</p>
+            </ion-item>
+        </ion-card-content>
+    </ion-card>
+    <ion-card (click)="abrirDetalhe()">
+        <img src="assets/img/boi2.jpg" />
         <ion-card-content>
             <ion-card-title>
                 <div fxLayout="row" fxLayoutAlign="space-between center">

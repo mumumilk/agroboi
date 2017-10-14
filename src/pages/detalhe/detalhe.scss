@@ -27,8 +27,9 @@ page-detalhe {
             }
             img {
                 border-radius: 50%;
-                height: 6em;
-                border: 0.35em solid #5ed3bf;
+                height: 5em;
+                max-width: 6em;
+                border: 0.35em solid #388E3C;
             }
             span {
                 display: block;
@@ -47,7 +48,7 @@ page-detalhe {
                 padding: 1.5em;
                 margin: 1em 0;
                 h1 {
-                    color: #5ed3bf;
+                    color: #388E3C;
                     font-size: 1.4em;
                     margin: 0;
                     padding: 0 0 0.5em 0;

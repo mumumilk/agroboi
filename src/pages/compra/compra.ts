@@ -30,7 +30,7 @@ export class CompraPage {
     this.navCtrl.push(DetalhePage);
   }
 
-  opcaoModal() {
+  opcoesModal() {
   let opcaoModal = this.modalCtrl.create(OpcaoPage);
   opcaoModal.present();
   }

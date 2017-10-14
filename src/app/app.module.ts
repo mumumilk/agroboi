@@ -14,6 +14,7 @@ import { LeilaoPage } from '../pages/leilao/leilao';
 import { TrocaPage } from '../pages/troca/troca';
 import { HomePage } from '../pages/home/home';
 import { DetalhePage } from '../pages/detalhe/detalhe';
+import { OpcaoPage } from '../pages/opcao/opcao';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { DetalhePage } from '../pages/detalhe/detalhe';
     TabsPage,
     CompraPage,
     HomePage,
+    OpcaoPage,
     VendaPage,
     LeilaoPage,
     TrocaPage,
@@ -36,6 +38,7 @@ import { DetalhePage } from '../pages/detalhe/detalhe';
     MyApp,
     CompraPage,
     HomePage,
+    OpcaoPage,
     VendaPage,
     LeilaoPage,
     TrocaPage,

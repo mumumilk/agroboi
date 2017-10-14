@@ -6,7 +6,12 @@
 -->
 <ion-header>
     <ion-navbar color="primary">
-        <div fxLayout="row" fxLayoutAlign="space-between center">
+        <div fxLayout="row" fxLayoutAlign="space-around center">
+            <div fxFlex="20">
+                <button ion-button icon-only menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+            </div>
             <ion-item fxFlex="70">
                 <ion-label>
                     <ion-icon style="color: white" name="search"></ion-icon>
@@ -14,7 +19,7 @@
                 <ion-input clearInput type="text"></ion-input>
             </ion-item>
             <div fxFlex="20">
-                <button ion-button icon-only style="display: inline-block">
+                <button ion-button icon-only>
             <ion-icon name="options"></ion-icon>
         </button>
             </div>
@@ -25,7 +30,7 @@
 
 
 <ion-content padding>
-    <ion-card>
+    <ion-card (click)="abrirDetalhe()">
         <img src="assets/img/boi.jpg" />
         <ion-card-content>
             <ion-card-title>

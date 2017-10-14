@@ -13,6 +13,7 @@ import { VendaPage } from '../pages/venda/venda';
 import { LeilaoPage } from '../pages/leilao/leilao';
 import { TrocaPage } from '../pages/troca/troca';
 import { HomePage } from '../pages/home/home';
+import { DetalhePage } from '../pages/detalhe/detalhe';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { HomePage } from '../pages/home/home';
     VendaPage,
     LeilaoPage,
     TrocaPage,
+    DetalhePage
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,8 @@ import { HomePage } from '../pages/home/home';
     VendaPage,
     LeilaoPage,
     TrocaPage,
-    TabsPage
+    TabsPage,
+    DetalhePage
   ],
   providers: [
     StatusBar,

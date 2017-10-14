@@ -15,7 +15,9 @@ import { AlertController } from 'ionic-angular';
   templateUrl: 'opcao.html',
 })
 export class OpcaoPage {
-public testCheckboxResult;
+public testCheckboxResultRaca;
+public testCheckboxResultSangue;
+public testCheckboxResultCategoria;
 public testCheckboxOpen;
 public structure: any = { lower: 1000, upper: 10000 };
 public structureIdade: any = { lower: 18, upper: 30 };
@@ -80,10 +82,77 @@ public structureIdade: any = { lower: 18, upper: 30 };
       handler: data => {
         console.log('Checkbox data:', data);
         this.testCheckboxOpen = false;
-        this.testCheckboxResult = data;
+        this.testCheckboxResultRaca = data;
       }
     });
     alert.present();
   }
 
+  showCheckboxCategoria() {
+    let alert = this.alertCtrl.create();
+    alert.setTitle('Qual a categoria?');
+
+    alert.addInput({
+      type: 'checkbox',
+      label: 'PO',
+      value: 'PO',
+    });
+
+    alert.addInput({
+      type: 'checkbox',
+      label: 'POI',
+      value: 'POI'
+    });
+
+    alert.addInput({
+      type: 'checkbox',
+      label: 'PC',
+      value: 'PC'
+    });
+
+    alert.addButton('Cancelar');
+    alert.addButton({
+      text: 'Confirmar',
+      handler: data => {
+        console.log('Checkbox data:', data);
+        this.testCheckboxOpen = false;
+        this.testCheckboxResultCategoria = data;
+      }
+    });
+    alert.present();
+  }
+
+  showCheckboxSangue() {
+    let alert = this.alertCtrl.create();
+    alert.setTitle('Qual a categoria?');
+
+    alert.addInput({
+      type: 'checkbox',
+      label: '1/4',
+      value: '1/4',
+    });
+
+    alert.addInput({
+      type: 'checkbox',
+      label: '3/4',
+      value: '3/4'
+    });
+
+    alert.addInput({
+      type: 'checkbox',
+      label: '4/8',
+      value: '4/8'
+    });
+
+    alert.addButton('Cancelar');
+    alert.addButton({
+      text: 'Confirmar',
+      handler: data => {
+        console.log('Checkbox data:', data);
+        this.testCheckboxOpen = false;
+        this.testCheckboxResultSangue = data;
+      }
+    });
+    alert.present();
+  }
 }

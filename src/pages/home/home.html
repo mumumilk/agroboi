@@ -6,9 +6,10 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-
-  <img src = ""/>
+<ion-content padding class="login">
+<ion-card >
+  <img src = "assets/img/logo.jpeg"/>
+  <ion-card-content>
   	<ion-item>
   		<ion-label floating>Email:</ion-label>
   		<ion-input type="email" [(ngModel)]="usuario.email"></ion-input>
@@ -18,9 +19,11 @@
   		<ion-label floating>Senha:</ion-label>
   		<ion-input type="password" [(ngModel)]="usuario.senha"></ion-input>
   	</ion-item>
+    <button ion-button (click)="entrar()">Entrar</button>
+
+    <button ion-button outline (click)="abrirCadastro()">Registrar</button>
+  </ion-card-content>
+</ion-card>
 
 
-  <button ion-button (click)="entrar()">Entrar</button>
-
-  <button ion-button outline (click)="abrirCadastro()">Registrar</button>
 </ion-content>

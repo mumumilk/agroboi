@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { HomePage } from '../home/home';
 /**
  * Generated class for the Cadastro page.
  *
@@ -25,4 +25,7 @@ export class Cadastro {
     console.log('ionViewDidLoad Cadastro');
   }
 
+  fechar() {
+  this.navCtrl.push(HomePage);
+  }
 }

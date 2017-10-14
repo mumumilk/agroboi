@@ -11,12 +11,14 @@ import { CompraPage } from '../pages/compra/compra';
 import { VendaPage } from '../pages/venda/venda';
 import { LeilaoPage } from '../pages/leilao/leilao';
 import { TrocaPage } from '../pages/troca/troca';
+import { HomePage } from '../pages/home/home';
 
 @NgModule({
   declarations: [
     MyApp,
     TabsPage,
     CompraPage,
+    HomePage,
     VendaPage,
     LeilaoPage,
     TrocaPage,
@@ -29,6 +31,7 @@ import { TrocaPage } from '../pages/troca/troca';
   entryComponents: [
     MyApp,
     CompraPage,
+    HomePage,
     VendaPage,
     LeilaoPage,
     TrocaPage,

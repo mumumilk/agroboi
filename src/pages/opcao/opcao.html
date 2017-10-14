@@ -19,15 +19,17 @@
           <ion-list>
             <ion-label>RAÇA</ion-label>
             <ion-input type="email" [(ngModel)]="testCheckboxResultRaca"></ion-input>
-            <button color="primary" ion-button block (click)="showCheckboxRaca()">
+            <button color="primary" ion-button block (click)="showCheckboxRaca()" icon-only>
+              <ion-icon name="search"></ion-icon>
                 Raça
             </button>
           </ion-list>
 
           <ion-list>
             <ion-label>CATEGORIA</ion-label>
-            <ion-input type="email" [(ngModel)]="testCheckboxResultCategoria"></ion-input>
-            <button color="primary" ion-button block (click)="showCheckboxCategoria()">
+            <ion-input type="email" [(ngModel)]="testCheckboxResultCategoria" ></ion-input>
+            <button color="primary" ion-button block (click)="showCheckboxCategoria()" icon-only>
+              <ion-icon name="search"></ion-icon>
                 Categoria
             </button>
           </ion-list>
@@ -35,7 +37,8 @@
           <ion-list>
             <ion-label>SANGUE</ion-label>
             <ion-input type="email" [(ngModel)]="testCheckboxResultSangue"></ion-input>
-            <button color="primary" ion-button block (click)="showCheckboxSangue()">
+            <button color="primary" ion-button block (click)="showCheckboxSangue()" icon-only>
+              <ion-icon name="search"></ion-icon>
                 Sangue
             </button>
           </ion-list>

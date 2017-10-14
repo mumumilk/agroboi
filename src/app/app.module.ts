@@ -14,9 +14,12 @@ import { LeilaoPage } from '../pages/leilao/leilao';
 import { TrocaPage } from '../pages/troca/troca';
 import { HomePage } from '../pages/home/home';
 import { DetalhePage } from '../pages/detalhe/detalhe';
+
+import { OpcaoPage } from '../pages/opcao/opcao';
 import { DetalheRacaPage } from '../pages/detalhe-raca/detalhe-raca';
 import { DetalheLeitePage } from '../pages/detalhe-leite/detalhe-leite';
 import { DetalheCortePage } from '../pages/detalhe-corte/detalhe-corte';
+
 
 @NgModule({
   declarations: [
@@ -24,6 +27,7 @@ import { DetalheCortePage } from '../pages/detalhe-corte/detalhe-corte';
     TabsPage,
     CompraPage,
     HomePage,
+    OpcaoPage,
     VendaPage,
     LeilaoPage,
     TrocaPage,
@@ -42,6 +46,7 @@ import { DetalheCortePage } from '../pages/detalhe-corte/detalhe-corte';
     MyApp,
     CompraPage,
     HomePage,
+    OpcaoPage,
     VendaPage,
     LeilaoPage,
     TrocaPage,

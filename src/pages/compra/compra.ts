@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { DetalhePage } from '../detalhe/detalhe';
 import { ModalController, ViewController } from 'ionic-angular';
+import { OpcaoPage } from '../opcao/opcao';
 
 
 /**
@@ -29,8 +30,8 @@ export class CompraPage {
     this.navCtrl.push(DetalhePage);
   }
 
-  opcoesModal() {
-  //let contactModal = this.modalCtrl.create(OpcaoPage);
-  //contactModal.present();
+  opcaoModal() {
+  let opcaoModal = this.modalCtrl.create(OpcaoPage);
+  opcaoModal.present();
   }
 }

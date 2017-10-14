@@ -18,48 +18,44 @@
 
           <ion-list-header>
             Raça
+            <button color="primary" ion-button block (click)="showCheckboxRaca()">
+                Raça
+            </button>
           </ion-list-header>
-            <ion-item>
-              <button color="primary" ion-button block (click)="showCheckboxRaca()">
-                  Raça
-              </button>
-            </ion-item>
 
           <ion-list-header>
             Preço
+            <ion-item>
+            <ion-range dualKnobs="true" min="0" max="100000" pin="true" [(ngModel)]="structure" color="primary">
+              <ion-icon range-left small name="remove-circle"></ion-icon>
+              <ion-icon range-right name="add-circle"></ion-icon>
+            </ion-range>
+          </ion-item>
           </ion-list-header>
-          <ion-item>
-              <ion-range dualKnobs="true" min="0" max="100000" pin="true" [(ngModel)]="structure" color="primary">
-                <ion-label>Preço</ion-label>
-                <ion-icon range-left small name="remove-circle"></ion-icon>
-                <ion-icon range-right name="add-circle"></ion-icon>
-              </ion-range>
-            </ion-item>
 
-            <ion-list-header>
-              Sexo
-            </ion-list-header>
             <ion-list radio-group>
               <ion-item>
                 <ion-label>Fêmea</ion-label>
                 <ion-radio checked="true" value="Fêmea"></ion-radio>
-                </ion-item>
-                <ion-item>
+              </ion-item>
+
+              <ion-item>
                 <ion-label>Macho</ion-label>
                 <ion-radio value="Macho"></ion-radio>
-                </ion-item>
-            </ion-list >
+              </ion-item>
+            </ion-list>
+
+
 
             <ion-list-header>
-              Idade(mês)
+              Idade(meses)
+              <ion-item>
+              <ion-range dualKnobs="true" min="0" max="60" pin="true" [(ngModel)]="structureIdade" color="primary">
+                <ion-icon range-left small name="remove-circle"></ion-icon>
+                <ion-icon range-right name="add-circle"></ion-icon>
+              </ion-range>
+            </ion-item>
             </ion-list-header>
-            <ion-item>
-                <ion-range dualKnobs="true" min="0" max="100" pin="true" [(ngModel)]="structureIdade" color="primary">
-                  <ion-label>Preço</ion-label>
-                  <ion-icon range-left small name="remove-circle"></ion-icon>
-                  <ion-icon range-right name="add-circle"></ion-icon>
-                </ion-range>
-              </ion-item>
 
         </ion-list>
 

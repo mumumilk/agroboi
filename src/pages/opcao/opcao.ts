@@ -19,6 +19,7 @@ public testCheckboxResult;
 public testCheckboxOpen;
 public structure: any = { lower: 1000, upper: 10000 };
 public structureIdade: any = { lower: 18, upper: 30 };
+
   constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {
   }
 

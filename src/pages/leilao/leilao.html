@@ -6,11 +6,11 @@
 -->
 <ion-header>
     <ion-navbar color="primary">
-        <div fxLayout="row" fxLayoutAlign="space-around center">
-            <div fxFlex="20">
+        <div fxLayout="row" fxLayoutAlign="space-between center">
+            <div fxFlex="15">
                 <button ion-button icon-only menuToggle>
-            <ion-icon name="menu"></ion-icon>
-        </button>
+                <ion-icon name="menu"></ion-icon>
+            </button>
             </div>
             <ion-item fxFlex="70">
                 <ion-label>
@@ -18,10 +18,10 @@
                 </ion-label>
                 <ion-input clearInput type="text"></ion-input>
             </ion-item>
-            <div fxFlex="20">
-                <button ion-button (click)="opcoesModal()" icon-only>
-            <ion-icon name="options" ></ion-icon>
-        </button>
+            <div fxFlex="15">
+                <button (click)="opcoesModal()" ion-button icon-only menuToggle>
+                    <ion-icon name="options"></ion-icon>
+                </button>
             </div>
         </div>
     </ion-navbar>
@@ -42,8 +42,29 @@
 
   <div [ngSwitch]="tipo">
       <div *ngSwitchCase="'acontecendo'">
-          <ion-card (click)="abrirDetalhe('corte')">
+          <ion-card>
+            <div>
+              <ion-item>
+                  <ion-icon color="primary" name="time" item-start></ion-icon>
+                    Tempo
+                  <ion-badge color="danger" item-end>00:45:35</ion-badge>
+                </ion-item>
+            </div>
               <img src="assets/img/rebanho.jpg" />
+              <div>
+                <ion-item>
+                  <p>Rei do Gado</p>
+                  <ion-avatar item-start>
+                      <img src="assets/img/reiDoGado.jpg">
+                  </ion-avatar>
+                  </ion-item>
+              </div>
+              <div style="text-align: center">
+                <ion-item>
+                  <p>Local: Andradina - SP</p>
+                  </ion-item>
+              </div>
+
               <ion-card-content>
                   <ion-card-title>
                       <div fxLayout="row" fxLayoutAlign="space-between center">
@@ -77,7 +98,7 @@
       </div>
 
       <div *ngSwitchCase="'agendado'">
-          <ion-card (click)="abrirDetalhe('leite')">
+          <ion-card>
               <img src="assets/img/leiteira.jpg" />
               <ion-card-content>
                   <ion-card-title>
@@ -122,9 +143,6 @@
                           <p>5 kg/dia</p>
                       </ion-item>
                   </div>
-
-
-
               </ion-card-content>
           </ion-card>
       </div>

@@ -1,29 +1,45 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Login
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
-<ion-content padding >
-<ion-card>
-  <img src = "assets/img/logo2.jpg" class="ion-card"/>
-  <ion-card-content>
-  	<ion-item>
-  		<ion-label floating>Email:</ion-label>
-  		<ion-input type="email" [(ngModel)]="usuario.email"></ion-input>
-  	</ion-item>
-
-  	<ion-item>
-  		<ion-label floating>Senha:</ion-label>
-  		<ion-input type="password" [(ngModel)]="usuario.senha"></ion-input>
-  	</ion-item>
-    <button ion-button (click)="entrar()" class="ion-button">Entrar</button>
-
-    <button ion-button outline (click)="abrirCadastro()" class="ion-button">Registrar</button>
-  </ion-card-content>
-</ion-card>
-
-
+<ion-content style="background-color: whitesmoke" padding>
+    <ion-card style="margin: auto;">
+        <ion-card-header style="background-color: #4caf50">
+            <div style="margin: 0 auto;border-radius: 50%; border: 5px solid white; height: 268px; width: 268px; background-image: url('assets/img/logo2.jpg'); background-position: 397px 523px">
+            </div>
+        </ion-card-header>
+        <hr>
+        <ion-item>
+            <ion-label color="primary" floating>E-mail</ion-label>
+            <ion-input type="email" [(ngModel)]="usuario.email"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label color="primary" floating>Senha</ion-label>
+            <ion-input type="password" [(ngModel)]="usuario.senha"></ion-input>
+        </ion-item>
+        <ion-item padding>
+            <button ion-button block default (click)="entrar()">ENTRAR</button>
+            <button ion-button color="secondary" (click)="abrirCadastro()" block outline small>Registrar</button>
+        </ion-item>
+    </ion-card>
 </ion-content>
+
+<!-- <ion-content padding>
+
+    <img src="assets/img/logo.jpg" class="ion-card" />
+
+    <ion-card>
+        <ion-card-content>
+            <ion-item>
+                <ion-label floating>Email:</ion-label>                                                                                        
+                <ion-input type="email" [(ngModel)]="usuario.email"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating>Senha:</ion-label>
+                <ion-input type="password" [(ngModel)]="usuario.senha"></ion-input>
+            </ion-item>
+            <br>
+            <button ion-button block (click)="entrar()" class="ion-button">Entrar</button>
+            <button ion-button outline (click)="abrirCadastro()" class="ion-button">Registrar</button>
+
+        </ion-card-content>
+    </ion-card>
+
+</ion-content> -->

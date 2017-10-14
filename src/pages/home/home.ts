@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { AlertController,ModalController } from 'ionic-angular';
+import { CompraPage } from '../compra/compra';
 
 @Component({
   selector: 'page-home',
@@ -8,23 +9,19 @@ import { AlertController,ModalController } from 'ionic-angular';
 })
 export class HomePage {
 
-  public usuario = {email:'mumumilk@mumumilk.com.br', senha:'123456'};
+  public usuario = {email:'', senha:''};
 
   constructor(public navCtrl: NavController, public alertCtrl: AlertController) {
 
   }
 
-
-
   entrar(){
-    if(this.usuario.email != '' && this.usuario.senha !=''){
-
+    if(this.usuario.email == 'mumumilk@mumumilk.com.br' && this.usuario.senha =='123456'){
+      this.navCtrl.push(CompraPage);
     }else{
       this.alertaLoginFalha();
     }
   }
-
-
 
   alertaLoginFalha(){
     let alert = this.alertCtrl.create({
@@ -38,6 +35,7 @@ export class HomePage {
   abrirCadastro(){
     this.navCtrl.push('Cadastro');
   }
+
 
 
 }

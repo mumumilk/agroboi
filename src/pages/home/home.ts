@@ -10,14 +10,14 @@ import { TabsPage } from '../tabs/tabs';
 })
 export class HomePage {
 
-  public usuario = {email:'', senha:''};
+  public usuario = {email:'henrique@gmail.com', senha:'12345'};
 
   constructor(public navCtrl: NavController, public alertCtrl: AlertController) {
 
   }
 
   entrar(){
-    if(this.usuario.email == '1' && this.usuario.senha =='1'){
+    if(this.usuario.email == 'henrique@gmail.com' && this.usuario.senha =='12345'){
       this.navCtrl.push(TabsPage);
     }else{
       this.alertaLoginFalha();

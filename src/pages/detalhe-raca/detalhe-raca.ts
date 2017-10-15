@@ -29,7 +29,7 @@ export class DetalheRacaPage {
   
         type: 'horizontalBar',
         data: {
-          labels: ["DIPP", "D3P", "MP120", "MP210", "DP210", "DP450", "DSTAY", "DPE365", "DPE450", "DAOL", "MGTe"],
+          labels: ["DIPP", "D3P", "MP210", "DP210", "DPE365", "DPE450", "DAOL", "MGTe"],
           datasets: [{
             label: 'Índice Bioeconômico',
             data: [18, 45, 60, 80, 12, 9, 40, 5, 4, 10, 12],
@@ -41,10 +41,7 @@ export class DetalheRacaPage {
               'rgba(153, 102, 255, 0.2)',
               'rgba(255, 159, 64, 0.2)',
               'rgba(54, 162, 235, 0.2)',
-              'rgba(255, 206, 86, 0.2)',
-              'rgba(75, 192, 192, 0.2)',
-              'rgba(153, 102, 255, 0.2)',
-              'rgba(255, 159, 64, 0.2)'
+              'rgba(255, 206, 86, 0.2)'
               
             ],
             borderColor: [
@@ -55,10 +52,7 @@ export class DetalheRacaPage {
               'rgba(153, 102, 255, 1)',
               'rgba(255, 159, 64, 1)',
               'rgba(54, 162, 235, 1)',
-              'rgba(255, 206, 86, 1)',
-              'rgba(75, 192, 192, 1)',
-              'rgba(153, 102, 255, 1)',
-              'rgba(255, 159, 64, 1)'
+              'rgba(255, 206, 86, 1)'
             ],
             borderWidth: 1
           }]

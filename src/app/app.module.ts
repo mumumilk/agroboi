@@ -16,6 +16,7 @@ import { HomePage } from '../pages/home/home';
 import { DetalhePage } from '../pages/detalhe/detalhe';
 
 import { OpcaoPage } from '../pages/opcao/opcao';
+import { OpcaoLeilaoPage } from '../pages/opcao-leilao/opcao-leilao';
 import { DetalheRacaPage } from '../pages/detalhe-raca/detalhe-raca';
 import { DetalheLeitePage } from '../pages/detalhe-leite/detalhe-leite';
 import { DetalheCortePage } from '../pages/detalhe-corte/detalhe-corte';
@@ -28,6 +29,7 @@ import { DetalheCortePage } from '../pages/detalhe-corte/detalhe-corte';
     CompraPage,
     HomePage,
     OpcaoPage,
+    OpcaoLeilaoPage,
     VendaPage,
     LeilaoPage,
     TrocaPage,
@@ -47,6 +49,7 @@ import { DetalheCortePage } from '../pages/detalhe-corte/detalhe-corte';
     CompraPage,
     HomePage,
     OpcaoPage,
+    OpcaoLeilaoPage,
     VendaPage,
     LeilaoPage,
     TrocaPage,

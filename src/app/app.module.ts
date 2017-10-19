@@ -20,7 +20,8 @@ import { OpcaoLeilaoPage } from '../pages/opcao-leilao/opcao-leilao';
 import { DetalheRacaPage } from '../pages/detalhe-raca/detalhe-raca';
 import { DetalheLeitePage } from '../pages/detalhe-leite/detalhe-leite';
 import { DetalheCortePage } from '../pages/detalhe-corte/detalhe-corte';
-
+import { FirebaseProvider } from '../providers/firebase-provider';
+import { Camera, CameraOptions } from '@ionic-native/camera';
 
 @NgModule({
   declarations: [
@@ -62,6 +63,8 @@ import { DetalheCortePage } from '../pages/detalhe-corte/detalhe-corte';
   providers: [
     StatusBar,
     SplashScreen,
+    FirebaseProvider,
+    Camera,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

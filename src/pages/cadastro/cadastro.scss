@@ -1,10 +1,19 @@
 page-cadastro {
 
 .centro {
-    width:100px;
-    height:100px;
-    position:absolute;
-    top:50%;
-    left:50%;
-    }
+    border: 3px solid #73AD21;
+    position:center;
+    // margin-left: center;
+    // margin-right: center;
+}
+
+.botoes{
+  position:center;
+  width: 100px;
+  height: 30px;
+  margin: auto;
+}
+.div{
+  margin: auto;
+}
 }

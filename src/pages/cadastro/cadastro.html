@@ -12,42 +12,48 @@
 
 </ion-header>
 <ion-content padding>
-  <div>
-      <div style="margin: 0px; line-height: 250px; background-color: rgb(232, 235, 239); text-align: center;">
-      <i style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;"></i>
-      </div>
-  </div>
-
+    <ion-card class="centro" (press)="presentActionSheet($event)">
+      <img src='{{imagem}}' width="250" height="250">
+    </ion-card >
+    <ion-item>
+        <button item-left class="botoes" ion-button color="primary" (click)="capturar()">Câmera</button>
+        <button item-right class="botoes" ion-button color="primary"  (click)="salvar()">Galeria</button>
+    </ion-item>
   <ion-item>
     <ion-label floating>Nome:</ion-label>
-    <ion-input type="text" [(ngModel)]="nome"></ion-input>
-    {{nome}}
-  </ion-item>
-
-  <ion-item>
-    <ion-label floating>Documento:</ion-label>
-    <ion-input type="text" [(ngModel)]="documento"></ion-input>
-    {{documento}}
+    <ion-input type="text" [(ngModel)]="usuario.nome"></ion-input>
+    {{usuario.nome}}
   </ion-item>
 
   <ion-item>
     <ion-label floating>E-mail:</ion-label>
-    <ion-input type="text" [(ngModel)]="email"></ion-input>
-    {{email}}
-  </ion-item>
-
-  <ion-item>
-    <ion-label floating>Usuário:</ion-label>
-    <ion-input type="text" [(ngModel)]="usuario"></ion-input>
-    {{usuario}}
+    <ion-input type="text" [(ngModel)]="usuario.email"></ion-input>
+    {{usuario.email}}
   </ion-item>
 
   <ion-item>
     <ion-label floating>Senha:</ion-label>
-    <ion-input type="password" [(ngModel)]="senha"></ion-input>
-    {{senha}}
+    <ion-input type="password" [(ngModel)]="usuario.senha"></ion-input>
+    {{usuario.senha}}
   </ion-item>
 
+  <ion-item>
+    <ion-label floating>Telefone:</ion-label>
+    <ion-input type="text" [(ngModel)]="usuario.telefone"></ion-input>
+    {{usuario.telefone}}
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Celular:</ion-label>
+    <ion-input type="text" [(ngModel)]="usuario.celular"></ion-input>
+    {{usuario.celular}}
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>CPF:</ion-label>
+    <ion-input type="text" [(ngModel)]="usuario.documento"></ion-input>
+    {{usuario.documento}}
+  </ion-item>
 
   <button color="primary" ion-button block (click)="salvar()">
   Cadastrar

@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavParams } from 'ionic-angular';
 import { FirebaseProvider } from '../../providers/firebase-provider';
 import { AlertController,ModalController } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
+
+
 
 /**
  * Generated class for the LoginPage page.

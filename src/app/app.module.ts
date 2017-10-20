@@ -22,6 +22,7 @@ import { DetalheCortePage } from '../pages/detalhe-corte/detalhe-corte';
 import { FirebaseProvider } from '../providers/firebase-provider';
 import { Camera, CameraOptions } from '@ionic-native/camera';
 
+
 @NgModule({
   declarations: [
     MyApp,

@@ -4,8 +4,6 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { FlexLayoutModule } from "@angular/flex-layout";
 
-import { TabsPage } from '../pages/tabs/tabs';
-
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { CompraPage } from '../pages/compra/compra';
@@ -26,7 +24,6 @@ import { Camera, CameraOptions } from '@ionic-native/camera';
 @NgModule({
   declarations: [
     MyApp,
-    TabsPage,
     CompraPage,
     HomePage,
     OpcaoPage,
@@ -54,7 +51,6 @@ import { Camera, CameraOptions } from '@ionic-native/camera';
     VendaPage,
     LeilaoPage,
     TrocaPage,
-    TabsPage,
     DetalhePage,
     DetalheRacaPage,
     DetalheLeitePage,

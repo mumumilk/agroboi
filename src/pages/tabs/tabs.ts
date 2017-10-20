@@ -3,7 +3,9 @@ import { VendaPage } from '../venda/venda';
 import { CompraPage } from '../compra/compra';
 import { LeilaoPage } from '../leilao/leilao';
 import { TrocaPage } from '../troca/troca';
+import { IonicPage } from 'ionic-angular';
 
+@IonicPage()
 
 @Component({
   templateUrl: 'tabs.html'

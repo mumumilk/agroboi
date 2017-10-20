@@ -28,9 +28,10 @@
 </ion-header>
 
 <ion-content padding>
-
-
     <div padding>
+      <button (click)="sair()" ion-button >
+          Sair (por enquanto)
+      </button>
         <ion-segment [(ngModel)]="tipo">
             <ion-segment-button value="corte">
                 Corte

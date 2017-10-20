@@ -6,6 +6,8 @@ import { DetalheCortePage } from '../detalhe-corte/detalhe-corte';
 import { DetalheLeitePage } from '../detalhe-leite/detalhe-leite';
 import { DetalheRacaPage } from '../detalhe-raca/detalhe-raca';
 import { OpcaoPage } from '../opcao/opcao';
+import { FirebaseProvider } from '../../providers/firebase-provider';
+import { HomePage } from '../home/home'
 
 
 /**
@@ -24,7 +26,7 @@ export class CompraPage {
 
   tipo : string = 'corte';
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController, public firebase: FirebaseProvider) {
   }
 
   ionViewDidLoad() {
@@ -43,4 +45,8 @@ export class CompraPage {
   let opcaoModal = this.modalCtrl.create(OpcaoPage);
   opcaoModal.present();
   }
+
+  sair(){
+  this.firebase.auth().signOut().then(() => this.navCtrl.setRoot(HomePage));
+}
 }

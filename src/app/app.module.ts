@@ -12,6 +12,7 @@ import { LeilaoPage } from '../pages/leilao/leilao';
 import { TrocaPage } from '../pages/troca/troca';
 import { HomePage } from '../pages/home/home';
 import { DetalhePage } from '../pages/detalhe/detalhe';
+import { LoginPage } from '../pages/login/login';
 
 import { OpcaoPage } from '../pages/opcao/opcao';
 import { OpcaoLeilaoPage } from '../pages/opcao-leilao/opcao-leilao';
@@ -34,7 +35,8 @@ import { Camera, CameraOptions } from '@ionic-native/camera';
     DetalhePage,
     DetalheRacaPage,
     DetalheLeitePage,
-    DetalheCortePage
+    DetalheCortePage,
+    LoginPage
   ],
   imports: [
     BrowserModule,
@@ -54,7 +56,8 @@ import { Camera, CameraOptions } from '@ionic-native/camera';
     DetalhePage,
     DetalheRacaPage,
     DetalheLeitePage,
-    DetalheCortePage
+    DetalheCortePage,
+    LoginPage
   ],
   providers: [
     StatusBar,

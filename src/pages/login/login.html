@@ -1,0 +1,30 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-content class="background">
+  <ion-card class="ion-card.card">
+    <ion-card-header color="light">
+      Login
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list no-line>
+        <ion-item>
+          <ion-input type="text" [(ngModel)]="usuario.email" placeholder="E-mail"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="password" [(ngModel)]="usuario.senha" placeholder="Senha"></ion-input>
+        </ion-item>
+        <a>Esqueceu os seus detalhes de login?<b>Obtenha ajuda aqui</b></a>
+        <button ion-button block outline color="light" (click)="entrar()">Entrar</button>
+        <ion-label color="light">OU</ion-label>
+        <button ion-button block color="facebook">
+          <ion-icon name="logo-facebook"></ion-icon> Entrar com facebook
+        </button>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  <button ion-button clear full color="light">Não possui uma conta? Cadastrar</button>
+</ion-content>

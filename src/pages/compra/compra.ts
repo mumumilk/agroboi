@@ -8,6 +8,7 @@ import { DetalheRacaPage } from '../detalhe-raca/detalhe-raca';
 import { OpcaoPage } from '../opcao/opcao';
 import { FirebaseProvider } from '../../providers/firebase-provider';
 import { HomePage } from '../home/home'
+import { LoginPage } from '../login/login'
 
 
 /**
@@ -45,6 +46,10 @@ export class CompraPage {
   let opcaoModal = this.modalCtrl.create(OpcaoPage);
   opcaoModal.present();
   }
+
+  sair(){
+  this.firebase.auth().signOut().then(() => this.navCtrl.setRoot(LoginPage));
+}
 
 
 }

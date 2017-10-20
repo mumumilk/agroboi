@@ -46,7 +46,5 @@ export class CompraPage {
   opcaoModal.present();
   }
 
-  sair(){
-  this.firebase.auth().signOut().then(() => this.navCtrl.setRoot(HomePage));
-}
+
 }

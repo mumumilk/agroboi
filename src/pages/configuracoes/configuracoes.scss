@@ -1,0 +1,43 @@
+page-configuracoes {
+  .home{
+    background: #09940F;
+    color: #FFFFFF;
+    margin-top: 30px;
+  }
+
+  .list{
+    background: #12C61B;
+    color: #FFFFFF;
+    margin-top: 30px;
+  }
+
+  .toolbar-tittle{
+    text-align: center;
+  }
+
+  .tabs-md .tab-button-icon{
+    color: #ccc;
+  }
+  .temp{
+    font-size: 30px;
+    text-align: center;
+    font-weight: normal;
+  }
+
+  .location, .icon, .desc{
+    text-align: center;
+  }
+
+  .icon img{
+    width: 50px;
+    text-align: center;
+  }
+
+  .location{
+    font-size: 30px;
+  }
+
+  .des{
+    font-size: 30px;
+  }
+}

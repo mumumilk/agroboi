@@ -1,0 +1,58 @@
+<!--
+  Generated template for the ConfiguracoesPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Previsão do tempo</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-grid *ngIf="weather">
+    <ion-row>
+      <ion-col width-50 offset-25>
+        <h2>{{weather.display_location.full}}</h2>
+        <div><img src="{{weather.icon_url}}" alt=""></div>
+        <h3>{{weather.weather}}</h3>
+        <h1>{{weather.temp_c}} °</h1>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-50 offset-25>
+        <ion-list >
+          <ion-item>
+            <strong>Temperatura: </strong> {{weather.temperature_string}}
+          </ion-item>
+          <ion-item>
+            <strong>Humidade relativa:</strong> {{weather.relative_humidity}}
+          </ion-item>
+          <ion-item>
+            <strong>Condensação: </strong> {{weather.dewpoint_string}}
+          </ion-item>
+          <ion-item>
+            <strong>Visibilidade: </strong> {{weather.visibility_mi}}
+          </ion-item>
+          <ion-item>
+            <strong>Índice de calor: </strong> {{weather.heat_index_string}}
+          </ion-item>
+          <ion-item>
+            <strong>Latitude: </strong> {{weather.display_location.latitude}}
+          </ion-item>
+          <ion-item>
+            <strong>Longitude: </strong> {{weather.display_location.longitude}}
+          </ion-item>
+          <ion-item>
+            <strong>Altitude: </strong> {{weather.display_location.elevation}}
+          </ion-item>
+        </ion-list>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+</ion-content>

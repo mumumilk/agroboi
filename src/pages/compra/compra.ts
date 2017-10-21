@@ -9,6 +9,7 @@ import { OpcaoPage } from '../opcao/opcao';
 import { FirebaseProvider } from '../../providers/firebase-provider';
 import { HomePage } from '../home/home'
 import { LoginPage } from '../login/login'
+import { ConfiguracoesPage } from '../configuracoes/configuracoes'
 
 
 /**
@@ -50,6 +51,10 @@ export class CompraPage {
   sair(){
   this.firebase.auth().signOut().then(() => this.navCtrl.setRoot(LoginPage));
 }
+
+ abrirWeather(){
+   this.navCtrl.push(ConfiguracoesPage);
+ }
 
 
 }

@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { FlexLayoutModule } from "@angular/flex-layout";
-
+import { HttpModule } from '@angular/http';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { CompraPage } from '../pages/compra/compra';
@@ -13,6 +13,7 @@ import { TrocaPage } from '../pages/troca/troca';
 import { HomePage } from '../pages/home/home';
 import { DetalhePage } from '../pages/detalhe/detalhe';
 import { LoginPage } from '../pages/login/login';
+import { ConfiguracoesPage } from '../pages/configuracoes/configuracoes';
 
 import { OpcaoPage } from '../pages/opcao/opcao';
 import { OpcaoLeilaoPage } from '../pages/opcao-leilao/opcao-leilao';
@@ -21,6 +22,7 @@ import { DetalheLeitePage } from '../pages/detalhe-leite/detalhe-leite';
 import { DetalheCortePage } from '../pages/detalhe-corte/detalhe-corte';
 import { FirebaseProvider } from '../providers/firebase-provider';
 import { Camera, CameraOptions } from '@ionic-native/camera';
+import { WeatherProvider } from '../providers/weather';
 
 
 @NgModule({
@@ -37,12 +39,14 @@ import { Camera, CameraOptions } from '@ionic-native/camera';
     DetalheRacaPage,
     DetalheLeitePage,
     DetalheCortePage,
-    LoginPage
+    LoginPage,
+    ConfiguracoesPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    FlexLayoutModule
+    FlexLayoutModule,
+    HttpModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -58,14 +62,16 @@ import { Camera, CameraOptions } from '@ionic-native/camera';
     DetalheRacaPage,
     DetalheLeitePage,
     DetalheCortePage,
-    LoginPage
+    LoginPage,
+    ConfiguracoesPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     FirebaseProvider,
     Camera,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    WeatherProvider
   ]
 })
 export class AppModule {}

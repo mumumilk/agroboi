@@ -23,14 +23,17 @@
     "@angular/platform-browser-dynamic": "4.4.3",
     "@ionic-native/camera": "^4.3.2",
     "@ionic-native/core": "4.3.0",
+    "@ionic-native/facebook": "^4.3.2",
     "@ionic-native/splash-screen": "^4.3.0",
     "@ionic-native/status-bar": "4.3.0",
     "@ionic/storage": "2.0.1",
     "chart.js": "^2.7.0",
     "cordova-android": "^6.2.3",
+    "cordova-ios": "4.5.2",
     "cordova-plugin-camera": "^2.4.1",
     "cordova-plugin-compat": "^1.2.0",
     "cordova-plugin-device": "^1.1.4",
+    "cordova-plugin-facebook4": "^1.9.1",
     "cordova-plugin-ionic-webview": "^1.1.15",
     "cordova-plugin-splashscreen": "^4.0.3",
     "cordova-plugin-statusbar": "git+https://github.com/apache/cordova-plugin-statusbar.git",
@@ -56,7 +59,11 @@
       "cordova-plugin-statusbar": {},
       "cordova-plugin-whitelist": {},
       "ionic-plugin-keyboard": {},
-      "cordova-plugin-camera": {}
+      "cordova-plugin-camera": {},
+      "cordova-plugin-facebook4": {
+        "APP_ID": "1788956221403070",
+        "APP_NAME": "boinamao"
+      }
     },
     "platforms": [
       "android"

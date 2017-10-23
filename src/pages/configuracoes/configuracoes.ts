@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { WeatherProvider } from '../../providers/weather';
+import { Storage } from '@ionic/storage';
 /**
  * Generated class for the ConfiguracoesPage page.
  *
@@ -15,11 +16,13 @@ import { WeatherProvider } from '../../providers/weather';
 })
 export class ConfiguracoesPage {
   weather: any;
+
   public local: {
-    cidade: string,
-    estado: string
+    cidade: String,
+    estado: String
   }
-  constructor(public navCtrl: NavController, public navParams: NavParams, public  weatherProvider : WeatherProvider) {
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, public  weatherProvider : WeatherProvider, private storage: Storage) {
 
   }
 
@@ -28,15 +31,14 @@ export class ConfiguracoesPage {
   }
 
   ionViewWillEnter(){
-    this.local = {
-      cidade: 'Londrina',
-      estado: 'PR'
-    }
-
-    this.weatherProvider.getWeather(this.local.cidade, this.local.estado)
-      .subscribe(weather => {
-        this.weather = weather.current_observation;
+      this.local = {
+        cidade: 'Londrina',
+        estado: 'PR'
+      }
+      this.weatherProvider.getWeather(this.local.cidade, this.local.estado)
+        .subscribe(weather => {
       });
+
   }
 
 }

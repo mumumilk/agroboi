@@ -14,6 +14,7 @@ import { HomePage } from '../pages/home/home';
 import { DetalhePage } from '../pages/detalhe/detalhe';
 import { LoginPage } from '../pages/login/login';
 import { ConfiguracoesPage } from '../pages/configuracoes/configuracoes';
+import{ IonicStorageModule } from '@ionic/storage' ;
 
 import { OpcaoPage } from '../pages/opcao/opcao';
 import { OpcaoLeilaoPage } from '../pages/opcao-leilao/opcao-leilao';
@@ -23,6 +24,8 @@ import { DetalheCortePage } from '../pages/detalhe-corte/detalhe-corte';
 import { FirebaseProvider } from '../providers/firebase-provider';
 import { Camera, CameraOptions } from '@ionic-native/camera';
 import { WeatherProvider } from '../providers/weather';
+import { Facebook} from '@ionic-native/facebook';
+import { Http } from '@angular/http';
 
 
 @NgModule({
@@ -46,7 +49,8 @@ import { WeatherProvider } from '../providers/weather';
     BrowserModule,
     IonicModule.forRoot(MyApp),
     FlexLayoutModule,
-    HttpModule
+    HttpModule,
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -70,6 +74,7 @@ import { WeatherProvider } from '../providers/weather';
     SplashScreen,
     FirebaseProvider,
     Camera,
+    Facebook,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     WeatherProvider
   ]

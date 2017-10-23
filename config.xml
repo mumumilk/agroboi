@@ -85,4 +85,8 @@
     <plugin name="cordova-plugin-camera" spec="^2.4.1" />
     <plugin name="cordova-plugin-splashscreen" spec="^4.0.3" />
     <allow-navigation href="http://192.168.100.12:8101" />
+    <plugin name="cordova-plugin-facebook4" spec="^1.9.1">
+        <variable name="APP_ID" value="1788956221403070" />
+        <variable name="APP_NAME" value="boinamao" />
+    </plugin>
 </widget>

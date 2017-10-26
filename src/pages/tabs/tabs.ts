@@ -3,10 +3,12 @@ import { VendaPage } from '../venda/venda';
 import { CompraPage } from '../compra/compra';
 import { LeilaoPage } from '../leilao/leilao';
 import { TrocaPage } from '../troca/troca';
-import { HomePage } from '../home/home';
+import { LoginPage } from '../login/login';
 import { IonicPage } from 'ionic-angular';
 import { FirebaseProvider } from '../../providers/firebase-provider';
 import { NavController } from 'ionic-angular';
+import { MenuController } from 'ionic-angular';
+import { ConfiguracoesPage } from '../configuracoes/configuracoes'
 
 @IonicPage()
 
@@ -25,6 +27,10 @@ export class TabsPage {
   }
 
   sair(){
-  this.firebase.auth().signOut().then(() => this.navCtrl.setRoot(HomePage));
-}
+  this.firebase.auth().signOut().then(() => this.navCtrl.setRoot(LoginPage));
+  }
+
+  abrirWeather(){
+    this.navCtrl.push(ConfiguracoesPage);
+  }
 }

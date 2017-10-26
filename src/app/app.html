@@ -14,7 +14,7 @@
                 Inicio
             </ion-item>
 
-            <ion-item icon-right (click)="abrirCadastro()">
+            <ion-item icon-right>
                 <ion-icon color='primary' name="notifications"></ion-icon>
                 Avisos
             </ion-item>
@@ -42,6 +42,11 @@
             <ion-item icon-right >
                 <ion-icon color='primary' name="trending-up"></ion-icon>
                 Cotações
+            </ion-item>
+
+            <ion-item icon-right >
+                <ion-icon color='primary' name="rainy" (click)="abrirWeather()"></ion-icon>
+                Previsão do tempo
             </ion-item>
 
             <ion-item icon-right (click)="sair()">

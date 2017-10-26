@@ -12,7 +12,7 @@ import { FirebaseProvider } from '../providers/firebase-provider';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any;
+  rootPage: any;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, public firebase: FirebaseProvider) {
     platform.ready().then(() => {
@@ -28,9 +28,4 @@ export class MyApp {
 
     });
   }
-
-
-
-
-
 }

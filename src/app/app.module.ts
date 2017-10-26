@@ -13,6 +13,7 @@ import { TrocaPage } from '../pages/troca/troca';
 import { HomePage } from '../pages/home/home';
 import { DetalhePage } from '../pages/detalhe/detalhe';
 import { LoginPage } from '../pages/login/login';
+import { TabsPage } from '../pages/tabs/tabs';
 import { ConfiguracoesPage } from '../pages/configuracoes/configuracoes';
 import{ IonicStorageModule } from '@ionic/storage' ;
 

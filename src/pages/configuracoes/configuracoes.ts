@@ -15,15 +15,14 @@ import { Storage } from '@ionic/storage';
   templateUrl: 'configuracoes.html',
 })
 export class ConfiguracoesPage {
-  weather: any;
+  weather:any;
 
-  public local: {
-    cidade: String,
-    estado: String
+  public local : {
+    cidade:string,
+    estado:string
   }
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public  weatherProvider : WeatherProvider, private storage: Storage) {
-
   }
 
   ionViewDidLoad() {
@@ -37,8 +36,9 @@ export class ConfiguracoesPage {
       }
       this.weatherProvider.getWeather(this.local.cidade, this.local.estado)
         .subscribe(weather => {
+          this.weather = weather.current_observation;
+          console.log(weather);
       });
-
   }
 
 }
